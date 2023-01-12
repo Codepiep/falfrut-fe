@@ -10,8 +10,7 @@ const QuantitySelector = () => {
     const inputValue = inputRef.current.value;
     setErrorMessage('');
     if (inputValue === '') setErrorMessage('please select a quantity');
-    if (inputValue > 10)
-      setErrorMessage('should be less than 10 and more than 0');
+    if (inputValue > 10) setErrorMessage('should be between 1 to 10');
     setInput(inputValue);
   };
 
@@ -20,7 +19,7 @@ const QuantitySelector = () => {
       setErrorMessage('');
       setInput(prev => parseInt(prev) + 1);
     } else {
-      setErrorMessage('should be less than 10 and more than 0');
+      setErrorMessage('should be between 1 to 10');
     }
   };
 
@@ -29,7 +28,7 @@ const QuantitySelector = () => {
       setErrorMessage('');
       setInput(prev => parseInt(prev) - 1);
     } else {
-      setErrorMessage('should be less than 10 and more than 0');
+      setErrorMessage('should be between 1 to 10');
     }
   };
 

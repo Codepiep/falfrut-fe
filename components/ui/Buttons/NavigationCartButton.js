@@ -4,7 +4,7 @@ import Link from 'next/link';
 const NavigationCartButton = () => {
   return (
     <Link
-      href="#"
+      href="/cart"
       className="flex items-center gap-3 lg:px-[28px] lg:py-2 bg-accentLight rounded-full">
       <ShoppingBagIcon className="w-7 h-7" />
       <span>|</span>

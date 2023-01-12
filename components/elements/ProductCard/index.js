@@ -18,7 +18,7 @@ const ProductCard = () => {
         alt="product-image"
         height={210}
         width={280}
-        style={{height: '210px', width: '280px', objectFit: 'cover'}}
+        style={{height: '140px', width: '210px', objectFit: 'cover'}}
       />
       <CardName>Tomato</CardName>
       <CardPrice price="120" quantityType="kg" />

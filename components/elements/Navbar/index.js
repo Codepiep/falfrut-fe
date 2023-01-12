@@ -17,12 +17,11 @@ const Navbar = () => {
     default:
       break;
   }
-  console.log(activePage);
   return (
     <nav className="lg:w-full lg:h-[70px] bg-gradient-to-r from-accentLight to-primary text-white">
       <BodyContainer className="flex justify-between h-full items-center">
         <ul className="flex flex-1 justify-evenly font-bold">
-          <Link href="#" className="flex text-center">
+          <Link href="/" className="flex text-center">
             <li
               className={`lg:w-[85px] ${
                 activePage === PAGES.HOME
@@ -32,7 +31,7 @@ const Navbar = () => {
               Home
             </li>
           </Link>
-          <Link href="#">
+          <Link href="/categories">
             <li
               className={`lg:w-[85px] ${
                 activePage === PAGES.CATEGORY

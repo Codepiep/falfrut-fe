@@ -3,3 +3,7 @@ export * from './Navbar';
 export * from './ProductCard';
 export * from './Testimonials';
 export * from './Footer';
+export * from './CategorySidebar';
+export * from './CategoryContent';
+export * from './CheckoutForm';
+export * from './CartCard';
